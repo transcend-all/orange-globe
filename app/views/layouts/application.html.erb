@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Globe</title>
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+<!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= link_to root_path, :action => 'go' do %>
+      <div class="header">
+        <h1 class="globe-title">
+          <svg id="globe-icon" width=200 height=100>
+          </svg>
+          <script>
+            var globeIcon = d3.select("#globe-icon");
+
+            globeIcon.append("circle")
+              .attr("cx", 100)
+              .attr("cy", 50)
+              .attr("r", 50)
+              .attr("fill", "#3498db");
+          </script>
+          Globe
+        </h1>
+        <h5 class="globe-title">
+        Innovative Presentation of Political and Economic data
+        </h5>
+      </div>
+    <% end %>
+
+
+
+    <%= yield %>
+  </body>
+</html>
