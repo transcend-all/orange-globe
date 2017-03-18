@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'maps/hydroelectric'
+  get 'charts/france2017'
 
-  get 'maps/gdp01'
+  get 'charts/gdp01'
+
+  get 'maps/hydroelectric'
 
   get 'maps/coalmines'
 
