@@ -8,5 +8,9 @@ Rails.application.routes.draw do
 
   get 'maps/coalmines'
 
+  get 'maps/applestoresusa'
+
+  get 'maps/domesticusarmybases'
+
   root 'landing#index'
 end
