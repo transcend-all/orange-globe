@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get 'maps/domesticusarmybases'
 
+  get 'landing/mapscharts'
+
   get 'landing/news'
 
   get 'landing/exp'
