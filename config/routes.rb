@@ -15,5 +15,7 @@ Rails.application.routes.draw do
 
   get 'landing/news'
 
+  get 'landing/exp'
+
   root 'landing#index'
 end
