@@ -12,5 +12,7 @@ Rails.application.routes.draw do
 
   get 'maps/domesticusarmybases'
 
+  get 'landing/news'
+
   root 'landing#index'
 end
