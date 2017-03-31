@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
 
   get 'hello_world', to: 'hello_world#index'
+
+  get 'people/index'
+
   get 'charts/france2017'
 
   get 'charts/gdp01'
+
+  get 'maps/landowners'
 
   get 'maps/hydroelectric'
 
